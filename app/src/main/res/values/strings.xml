@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">wazza</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="item_title">title</string>
+    <string name="settings">settings</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="save">save</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="what_i_do">What I Do</string>
+    <string name="preferred_user_name">Preferred User Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="first_name">First Name</string>
+    <string name="profile">Profile</string>
+    <string name="start_a_thread">Start A Thread</string>
+    <string name="effect">Effect</string>
+    <string name="rational">Rational</string>
+    <string name="idea">Idea</string>
+    <string name="favorite">favorite</string>
+    <string name="comments">Comments</string>
+    <string name="downvote">downvote</string>
+    <string name="upvote">upvote</string>
+    <string name="ffffffff">ffffffff</string>
+    <string name="default_score">0</string>
+    <string name="default_time">9:05 PM</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="email_address">Email Address</string>
+    <string name="retype_password">Retype Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="register">Register</string>
+    <string name="comment">comment</string>
+</resources>
