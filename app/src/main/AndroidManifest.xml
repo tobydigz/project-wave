@@ -8,19 +8,19 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".presentation.login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".MainActivity" />
-        <activity android:name=".UserProfileActivity" />
-        <activity android:name=".CommentActivity"
+        <activity android:name=".presentation.register.RegisterActivity" />
+        <activity android:name=".presentation.ideaslist.MainActivity" />
+        <activity android:name=".presentation.userprofile.UserProfileActivity" />
+        <activity android:name=".presentation.comment.CommentActivity"
         android:windowSoftInputMode="adjustPan"/>
-        <activity android:name=".NewThreadActivity"></activity>
+        <activity android:name=".presentation.newidea.NewThreadActivity"></activity>
     </application>
 
 </manifest>

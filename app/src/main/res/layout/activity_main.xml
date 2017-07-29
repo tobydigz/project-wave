@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context="com.loya.android.rudigo.MainActivity">
+    tools:context="com.loya.android.rudigo.presentation.ideaslist.MainActivity">
 
     <android.support.design.widget.CoordinatorLayout
         android:layout_width="match_parent"
@@ -41,7 +41,7 @@
             android:layout_gravity="right|bottom"
             android:layout_marginBottom="@dimen/md_keylines"
             android:layout_marginRight="@dimen/md_keylines"
-            android:src="@drawable/ic_create_black" />
+            app:srcCompat="@drawable/ic_create_black" />
 
     </android.support.design.widget.CoordinatorLayout>
 

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/custom_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp"
+        tools:text="This is a comment"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dp">
+
+        <ImageButton
+            android:id="@+id/btn_downvote"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="#757575"
+            app:srcCompat="@drawable/ic_thumb_down_black"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/text_downvote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/default_score"
+            android:textSize="15sp"/>
+
+
+        <ImageButton
+            android:id="@+id/btn_upvote"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="#009688"
+            app:srcCompat="@drawable/ic_thumb_up_black"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/text_upvote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/default_score"
+            android:textSize="15sp"/>
+
+
+        <ImageButton
+            android:id="@+id/btn_favorite"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:tint="#EF5350"
+            app:srcCompat="@drawable/ic_heart"
+            tools:ignore="ContentDescription"/>
+
+        <TextView
+            android:id="@+id/text_favorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingStart="10dp"
+            android:text="@string/default_score"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/custom_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_time"/>
+    </LinearLayout>
+</LinearLayout>

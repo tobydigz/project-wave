@@ -1,74 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.loya.android.rudigo.CommentActivity">
-
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/profile_appbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-
-        <android.support.v7.widget.Toolbar
-            android:id="@+id/comment_toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
-    </android.support.design.widget.AppBarLayout>
-
-    <TextView
-        android:id="@+id/usertextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/profile_appbar"
-        android:padding="16dp"
-        tools:text="Username" />
-
-    <TextView
-        android:id="@+id/ideatextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/usertextView"
-        android:padding="16dp"
-        tools:text="rationale" />
-
-    <TextView
-        android:id="@+id/effect"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/ideatextView"
-        android:padding="16dp"
-        tools:text="Effect" />
-
-
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/effect" />
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_below="@id/listView"
-        android:gravity="bottom"
+        android:orientation="vertical"
+        tools:context="com.loya.android.rudigo.presentation.comment.CommentActivity">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/username"/>
+
+        <TextView
+            android:id="@+id/userTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="18sp"
+            tools:text="Loya"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/idea"/>
+
+        <TextView
+            android:id="@+id/ideaTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="18sp"
+            tools:text="Do stuff"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/rational"/>
+
+        <TextView
+            android:id="@+id/rationaleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="18sp"
+            tools:text="Expanding the PH city tech space"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:text="@string/effect"/>
+
+        <TextView
+            android:id="@+id/effectTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:textSize="18sp"
+            tools:text="Making today count"/>
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
         android:orientation="horizontal">
 
         <android.support.design.widget.TextInputLayout
@@ -84,25 +93,22 @@
                 android:layout_marginLeft="8dp"
                 android:hint="@string/comment"
                 android:inputType="textMultiLine"
-                android:nextFocusUp="@id/listView" />
+                android:nextFocusUp="@id/listView"/>
 
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab_comment"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="4dp"
+            android:layout_gravity="center_vertical"
             android:layout_marginRight="8dp"
-            android:layout_weight="1"
-            android:src="@drawable/ic_send_black" />
+            app:srcCompat="@drawable/ic_send_black"/>
 
 
     </LinearLayout>
 
-
-</RelativeLayout>
-
+</FrameLayout>
 
 
 
