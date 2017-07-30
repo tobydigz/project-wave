@@ -16,9 +16,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".presentation.register.RegisterActivity" />
-        <activity android:name=".presentation.ideaslist.MainActivity" />
+        <activity android:name=".presentation.MainActivity" />
         <activity android:name=".presentation.userprofile.UserProfileActivity" />
-        <activity android:name=".presentation.comment.CommentActivity"
+        <activity android:name=".presentation.ideadetails.IdeaDetailsActivity"
         android:windowSoftInputMode="adjustPan"/>
         <activity android:name=".presentation.newidea.NewThreadActivity"></activity>
     </application>

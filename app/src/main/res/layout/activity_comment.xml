@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        tools:context="com.loya.android.rudigo.presentation.comment.CommentActivity">
+        tools:context="com.loya.android.rudigo.presentation.ideadetails.IdeaDetailsActivity">
 
         <TextView
             android:layout_width="wrap_content"
