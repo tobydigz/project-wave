@@ -1,48 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context="com.loya.android.rudigo.presentation.userprofile.UserProfileActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <LinearLayout
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <FrameLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center">
-
-            <ImageView
-                android:layout_marginTop="8dp"
-                android:id="@+id/profile_pic"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/ikhi"
-                tools:ignore="ContentDescription"/>
-
-            <ImageButton
-                android:id="@+id/camera_btn"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_gravity="bottom|end"
-                android:background="?attr/selectableItemBackgroundBorderless"
-                android:padding="20dp"
-                android:tint="#757575"
-                app:srcCompat="@drawable/ic_add_a_photo_black"/>
-        </FrameLayout>
+        android:orientation="vertical"
+        tools:context="com.loya.android.rudigo.presentation.userprofile.UserProfileActivity">
 
         <LinearLayout
-            android:id="@+id/linearlayout"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <ImageView
+                    android:id="@+id/profile_pic"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ikhi"
+                    tools:ignore="ContentDescription"/>
+
+                <ImageButton
+                    android:id="@+id/camera_btn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom|end"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:padding="20dp"
+                    android:tint="#757575"
+                    app:srcCompat="@drawable/ic_add_a_photo_black"/>
+            </FrameLayout>
+
 
             <android.support.design.widget.TextInputLayout
                 android:layout_width="match_parent"
@@ -58,7 +58,6 @@
                     android:hint="@string/first_name"
                     android:inputType="textCapWords"
                     android:padding="8dp"/>
-
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -74,7 +73,6 @@
                     android:hint="@string/last_name"
                     android:inputType="textCapWords"
                     android:padding="8dp"/>
-
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -90,7 +88,6 @@
                     android:hint="@string/preferred_user_name"
                     android:inputType="textCapWords"
                     android:padding="8dp"/>
-
             </android.support.design.widget.TextInputLayout>
 
             <android.support.design.widget.TextInputLayout
@@ -106,7 +103,6 @@
                     android:hint="@string/what_i_do"
                     android:inputType="textCapSentences"
                     android:padding="8dp"/>
-
             </android.support.design.widget.TextInputLayout>
 
 
@@ -125,19 +121,16 @@
                     android:padding="8dp"/>
             </android.support.design.widget.TextInputLayout>
         </LinearLayout>
-    </LinearLayout>
 
-    <Button
-        android:id="@+id/save_btn"
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end"
-        android:text="@string/save"
-        android:textAllCaps="false"
-        android:textColor="@color/colorPrimaryDark"
-        android:textSize="20sp"/>
-</FrameLayout>
-
-
-
+        <Button
+            android:id="@+id/save_btn"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/save"
+            android:textAllCaps="false"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"/>
+    </FrameLayout>
+</layout>

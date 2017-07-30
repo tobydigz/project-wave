@@ -1,70 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<layout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".presentation.login.LoginActivity">
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:src="@mipmap/ic_launcher"
-        tools:ignore="ContentDescription"/>
-
-    <android.support.design.widget.TextInputLayout
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context=".presentation.login.LoginActivity">
 
-        <EditText
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_launcher"
+            tools:ignore="ContentDescription"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:drawableLeft="@drawable/ic_person_black"
+                android:drawablePadding="16dp"
+                android:hint="@string/username"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColorHint="#009688"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableLeft="@drawable/ic_enhanced_encryption_black"
+                android:drawablePadding="16dp"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColorHint="#009688"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/sign_In_Btn"
+            style="@style/Base.Widget.AppCompat.Button.Colored"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:drawableLeft="@drawable/ic_person_black"
-            android:drawablePadding="16dp"
-            android:hint="@string/username"
-            android:inputType="textPersonName"
-            android:padding="10dp"
-            android:textColorHint="#009688"/>
+            android:layout_marginTop="30dp"
+            android:text="@string/sign_in"/>
 
-    </android.support.design.widget.TextInputLayout>
-
-    <android.support.design.widget.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <EditText
-            android:layout_width="match_parent"
+        <android.support.v7.widget.AppCompatButton
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:drawableLeft="@drawable/ic_enhanced_encryption_black"
-            android:drawablePadding="16dp"
-            android:hint="@string/password"
-            android:inputType="textPassword"
-            android:padding="10dp"
-            android:textColorHint="#009688"/>
-    </android.support.design.widget.TextInputLayout>
+            android:layout_gravity="center"
+            android:text="@string/register_text"
+            android:textAllCaps="false"/>
 
-    <Button
-        android:id="@+id/sign_In_Btn"
-        style="@style/Base.Widget.AppCompat.Button.Colored"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:text="@string/sign_in"/>
-
-    <android.support.v7.widget.AppCompatButton
-        style="@style/Widget.AppCompat.Button.Borderless"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="@string/register_text"
-        android:textAllCaps="false"/>
-
-</LinearLayout>
+    </LinearLayout>
+</layout>
